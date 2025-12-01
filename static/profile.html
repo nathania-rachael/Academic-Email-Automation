@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile — VIT Campus Alerts</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo-container">
+      <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" fill="#FFFFFF" />
+        <path d="M50 20 L70 50 L50 80 L30 50 Z" fill="#2C1E59" />
+      </svg>
+    </div>
+
+    <h2 class="app-subtitle">Your Profile</h2>
+
+    <form id="profile-form" class="login-form">
+      <div class="input-group"><input type="text" id="fullname" placeholder="Full Name" required></div>
+      <div class="input-group"><input type="email" id="email" placeholder="Email" required></div>
+      <div class="input-group"><input type="text" id="app-password" placeholder="App Password" required></div>
+
+      <div class="input-group"><input type="text" id="registration" placeholder="Registration Number" required></div>
+      <div class="input-group"><input type="text" id="year" placeholder="Year of Passing" required></div>
+      <div class="input-group"><input type="text" id="branch" placeholder="Branch" required></div>
+      <div class="input-group"><input type="text" id="school" placeholder="School" required></div>
+      <div class="input-group"><input type="text" id="cgpa" placeholder="CGPA"></div>
+      <div class="input-group"><input type="text" id="tenth-percentage" placeholder="10th Percentage (string)"></div>
+      <div class="input-group"><input type="text" id="twelfth-percentage" placeholder="12th Percentage (string)"></div>
+      <div class="input-group"><input type="text" id="username" placeholder="Username" readonly></div>
+      <div class="error-message" id="profile-message"></div>
+
+      <div style="display:flex;gap:10px;justify-content:center;margin-top:12px;">
+        <button type="submit" class="login-button">Save Profile</button>
+        <a href="home.html" class="login-button" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">Go to Home</a>
+      </div>
+
+      <div id="workflow-result" style="margin-top:12px;text-align:center;"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

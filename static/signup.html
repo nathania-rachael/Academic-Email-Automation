@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VIT Campus Alerts - Registration</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="login-container">
+    <div class="logo-container">
+      <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" fill="#FFFFFF" />
+        <path d="M50 20 L70 50 L50 80 L30 50 Z" fill="#2C1E59" />
+      </svg>
+    </div>
+
+    <p class="app-subtitle">Create your account</p>
+
+    <form class="login-form" id="signup-form">
+      <div class="input-group"><input type="text" id="fullname" placeholder="Full Name" required></div>
+      <div class="input-group"><input type="email" id="email" placeholder="Enter your email" required></div>
+
+      <div class="input-group">
+        <input type="text" id="app-password" placeholder="App Password" required>
+      </div>
+
+      <div class="input-group">
+        <input type="text" id="tenth-percentage" placeholder="10th Percentage" required>
+      </div>
+      <div class="input-group">
+        <input type="text" id="twelfth-percentage" placeholder="12th Percentage" required>
+      </div>
+
+      <div class="input-group"><input type="text" id="registration" placeholder="Registration Number" required></div>
+      <div class="input-group"><input type="text" id="year" placeholder="Year of Passing" required></div>
+      <div class="input-group"><input type="text" id="branch" placeholder="Branch" required></div>
+      <div class="input-group"><input type="text" id="school" placeholder="School" required></div>
+      <div class="input-group"><input type="text" id="cgpa" placeholder="CGPA" required></div>
+
+      <div class="input-group"><input type="text" id="username" placeholder="Create Username" required></div>
+      <div class="input-group"><input type="password" id="password" placeholder="Create Password" required></div>
+      <div class="input-group">
+        <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        <button type="button" class="toggle-password">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path fill="#7F8C8D" d="M12 4.5C7 4..."/></svg>
+        </button>
+      </div>
+
+      <div class="error-message" id="signup-error"></div>
+      <button type="submit" class="login-button">Register</button>
+    </form>
+
+    <p class="signup-prompt">Already have an account? <a href="index.html">Login</a></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
